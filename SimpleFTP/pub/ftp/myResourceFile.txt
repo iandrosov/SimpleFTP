@@ -1,0 +1,9 @@
+#<html><head><meta http-equiv="Content-Type" content="text/html; charset=x-sjis"></head><body><pre>
+char_encoding = x-sjis
+
+#Please translate the phrases on the right of the equals signs below!
+good_morning = good morning
+how_are_you = How are you?
+
+#</PRE></BODY></HTML>
+

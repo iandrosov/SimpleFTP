@@ -1,0 +1,5 @@
+#update property
+#Thu Oct 28 13:31:51 JST 2004
+ftp.return.code.list=226
+ftp.log.dir=c\:\\ftp_data\\log
+ftp.log=true

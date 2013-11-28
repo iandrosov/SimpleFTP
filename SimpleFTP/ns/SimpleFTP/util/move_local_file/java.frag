@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">move_local_file</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFIYXNoQ3Vyc29yIGlkYyA9IHBpcGVsaW5lLmdldEhhc2hDdXJzb3IoKTsKCgkvLyBHZXQg
+aW5wdXQgdmFsdWVzCiAgIAlpZGMuZmlyc3QoICJzb3VyY2UiICk7CglTdHJpbmcgc291cmNlID0g
+KFN0cmluZykgaWRjLmdldFZhbHVlKCk7CiAgIAlpZGMuZmlyc3QoICJ0YXJnZXQiICk7CglTdHJp
+bmcgdGFyZ2V0ID0gKFN0cmluZykgaWRjLmdldFZhbHVlKCk7CgkKCXRyeQoJewoJCUZpbGUgc291
+cmNlX2ZpbGUgPSBuZXcgRmlsZShzb3VyY2UpOwoJCXNvdXJjZV9maWxlLnJlbmFtZVRvKG5ldyBG
+aWxlKHRhcmdldCkpOwoJCXNvdXJjZV9maWxlID0gbnVsbDsKCQoJICAgCWlkYy5maXJzdCgpOwoJ
+CWlkYy5pbnNlcnRBZnRlcigic3RhdHVzIiwiU1VDQ0VTUyIpOwoJfQoJY2F0Y2goRXhjZXB0aW9u
+IGUpCgl7CgkgICAJaWRjLmZpcnN0KCk7CgkJaWRjLmluc2VydEFmdGVyKCJzdGF0dXMiLCJFUlJP
+UiIpOwkJCgkJdGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oZS5nZXRNZXNzYWdlKCkpOwoJfQoJ
+aWRjLmRlc3Ryb3koKTsK</value>
+</Values>

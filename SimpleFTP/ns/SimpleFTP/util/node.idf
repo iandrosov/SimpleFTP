@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_nsName">SimpleFTP.util</value>
+  <value name="shared">cHJpdmF0ZSBzdGF0aWMgU3RyaW5nIGNvbmZpZ19maWxlID0gImZ0cF9zZXR0aW5ncy5jbmYiOwoK
+cHJpdmF0ZSBzdGF0aWMgU3RyaW5nIGdldF9zdmNfcGF0aChTdHJpbmcgc3ZjX25hbWUsU3RyaW5n
+IGZvbGRlcixTdHJpbmcgcGtnKQp7CglTdHJpbmcgc3RyID0gInBhY2thZ2VzLyIgKyBwa2cgKyAi
+L25zLyI7CglzdHIgKz0gZ2V0X2ZvbGRlcihmb2xkZXIpOwoJc3RyICs9ICIvIiArIHN2Y19uYW1l
+ICsgIi9mbG93LnhtbCI7CglyZXR1cm4gc3RyOwp9Cgpwcml2YXRlIHN0YXRpYyB2b2lkIHdyaXRl
+X2Zsb3dfeG1sKFN0cmluZyBmbG93LCBTdHJpbmcgcGF0aCkKewp0cnkgewoJRmlsZVdyaXRlciBm
+dyA9IG5ldyBGaWxlV3JpdGVyKHBhdGgsIGZhbHNlKTsKCWZ3LndyaXRlKGZsb3cpOyAgICAKCWZ3
+LmNsb3NlKCk7CglmdyA9IG51bGw7Cn0KY2F0Y2goRXhjZXB0aW9uIGUpCnt9Cn0KCnByaXZhdGUg
+c3RhdGljIFN0cmluZyBnZXRfZm9sZGVyKFN0cmluZyBzdHIpCnsKCVN0cmluZyByZXMgPSBzdHIu
+cmVwbGFjZSgnLicsJy8nKTsKCVN0cmluZyB0bXAgPSByZXMucmVwbGFjZSgnOicsJy8nKTsKCXJl
+dHVybiB0bXA7Cn0=</value>
+  <value name="encodeutf8">true</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>java.io.*</value>
+    <value>java.util.*</value>
+    <value>java.text.*</value>
+    <value>com.wm.app.b2b.server.ServerAPI</value>
+    <value>com.wm.lang.ns.NSName</value>
+    <value>com.wm.app.b2b.server.ServiceThread</value>
+  </array>
+</Values>

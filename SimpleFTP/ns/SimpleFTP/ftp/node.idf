@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_nsName">SimpleFTP.ftp</value>
+  <value name="shared">c3RhdGljIFN0cmluZyBjb25maWdfZmlsZSA9ICJwYWNrYWdlcy9TaW1wbGVGVFAvY29uZmlnL2Z0
+cC5jbmYiOwpzdGF0aWMgU3RyaW5nIHdvcmtpbmdfZGlyID0gIndvcmtfaW4iOwpzdGF0aWMgU3Ry
+aW5nIHdvcmtfb3V0ID0gIndvcmtfb3V0IjsKCnN0YXRpYyBwcml2YXRlIFN0cmluZyBnZXRfYmFz
+ZV9kaXJlY3RvcnkoU3RyaW5nIGRpcikKewoJU3RyaW5nIHN0ciA9ICIiOwoJU3RyaW5nIHRtcCA9
+ICIiOwoJCglTdHJpbmdUb2tlbml6ZXIgc3QgPSBuZXcgU3RyaW5nVG9rZW5pemVyKGRpcixGaWxl
+LnNlcGFyYXRvcik7CglpbnQgY291bnQgPSBzdC5jb3VudFRva2VucygpOwoJCQoJd2hpbGUgKHN0
+Lmhhc01vcmVUb2tlbnMoKSkgewoJCXRtcCA9IHN0Lm5leHRUb2tlbigpOwoJCWNvdW50LS07CgkJ
+aWYgKGNvdW50ID4gMCkJCgkJewkJCQoJCQlzdHIgKz0gdG1wOwoJCQlpZiAoY291bnQgPiAxKQoJ
+CSAJCXN0ciArPSBGaWxlLnNlcGFyYXRvcjsKCQl9CiAgICB9CglyZXR1cm4gc3RyOwp9</value>
+  <value name="encodeutf8">true</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>java.util.*</value>
+    <value>java.io.*</value>
+    <value>com.wm.util.coder.XMLCoder</value>
+    <value>com.wm.lang.ns.NSName</value>
+  </array>
+</Values>
