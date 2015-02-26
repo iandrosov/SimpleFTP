@@ -1,8 +1,8 @@
 package SimpleFTP;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2005-02-25 16:18:05 JST
-// -----( ON-HOST: xiandros-c640
+// -----( CREATED: 2015-02-25 19:50:59 EST
+// -----( ON-HOST: PC-WIN7-001
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -42,7 +42,7 @@ public final class util
 		// [i] field:0:required msg
 		// pipeline
 		IDataCursor pipelineCursor = pipeline.getCursor();
-			String	msg = IDataUtil.getString( pipelineCursor, "msg" );
+		String	msg = IDataUtil.getString( pipelineCursor, "msg" );
 		pipelineCursor.destroy();
 		String logfile = "simpleftp";
 		try 
@@ -209,19 +209,19 @@ public final class util
 		InputStream in_stream = (InputStream) new FileInputStream(file_name);
 		config.load(in_stream);
 		// Get property name list
-		Enumeration enum = config.propertyNames();
+		Enumeration enum1 = config.propertyNames();
 		int count = 0;
-		while (enum.hasMoreElements())
+		while (enum1.hasMoreElements())
 		{
-			property_name = (String)enum.nextElement();
+			property_name = (String)enum1.nextElement();
 			count++;
 		}
-		enum = config.propertyNames();
+		enum1 = config.propertyNames();
 		property_list = new Values[count];
 		int i = 0;
-		while (enum.hasMoreElements())
+		while (enum1.hasMoreElements())
 		{
-			property_name = (String)enum.nextElement();
+			property_name = (String)enum1.nextElement();
 			str = config.getProperty(property_name);
 			data = new Values();
 			data.put("propertyname",property_name);
@@ -236,7 +236,7 @@ public final class util
 		config = null;
 		in_stream.close();
 		in_stream = null;
-		enum = null;
+		enum1 = null;
 	}
 	catch(Exception e)
 	{
@@ -419,19 +419,19 @@ public final class util
 				InputStream in_stream = (InputStream) new FileInputStream(file_name);
 				config.load(in_stream);
 				// Get property name list
-				Enumeration enum = config.propertyNames();
+				Enumeration enum1 = config.propertyNames();
 				int count = 0;
-				while (enum.hasMoreElements())
+				while (enum1.hasMoreElements())
 				{
-					property_name = (String)enum.nextElement();
+					property_name = (String)enum1.nextElement();
 					count++;
 				}
-				enum = config.propertyNames();
+				enum1 = config.propertyNames();
 				property_list = new Values[count];
 				int i = 0;
-				while (enum.hasMoreElements())
+				while (enum1.hasMoreElements())
 				{
-					property_name = (String)enum.nextElement();
+					property_name = (String)enum1.nextElement();
 					str = config.getProperty(property_name);
 					data = new Values();
 					data.put(property_name,str);
@@ -446,7 +446,7 @@ public final class util
 				config = null;
 				in_stream.close();
 				in_stream = null;
-				enum = null;
+				enum1 = null;
 			}
 			catch(Exception e)
 			{
