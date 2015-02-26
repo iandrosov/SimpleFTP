@@ -1,7 +1,7 @@
 package SimpleFTP;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-02-25 19:57:04 EST
+// -----( CREATED: 2015-02-25 22:10:04 EST
 // -----( ON-HOST: PC-WIN7-001
 
 import com.wm.data.*;
@@ -9,10 +9,16 @@ import com.wm.util.Values;
 import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.Enumeration;
+import java.util.StringTokenizer;
 import com.wm.util.coder.XMLCoder;
-import com.wm.lang.ns.NSName;
+import com.wm.data.IData;
+import com.wm.data.IDataCursor;
 // --- <<IS-END-IMPORTS>> ---
 
 public final class ftp
@@ -55,7 +61,7 @@ public final class ftp
 		// [i] field:0:required procservice
 		// [i] field:0:required invoketype
 		// [o] field:0:required message
-			IDataHashCursor idc = pipeline.getHashCursor();
+			IDataCursor idc = pipeline.getCursor();
 		
 			// Get input values
 		   	idc.first( "ftpalias" );
@@ -344,7 +350,7 @@ public final class ftp
 		// @sigtype java 3.5
 		// [i] field:0:required ftpalias
 		// [o] field:0:required message
-	IDataHashCursor idc = pipeline.getHashCursor();
+	IDataCursor idc = pipeline.getCursor();
 
 	// Get input values
    	idc.first( "ftpalias" );
@@ -395,7 +401,7 @@ public final class ftp
 		}	
 		// Setup output message
 		idc.first();
-		idc.insertAfter("message","Alias - " + ftp_alias + "was removed.");
+		idc.insertAfter("message","Alias - " + ftp_alias + " - was removed.");
 	
 	}
 	catch(Exception e)
@@ -445,7 +451,7 @@ public final class ftp
 		// [i] field:0:required procservice
 		// [i] field:0:required runAsUser
 		// [o] field:0:required message
-		IDataHashCursor idc = pipeline.getHashCursor();
+		IDataCursor idc = pipeline.getCursor();
 		
 		String ftp_alias = "";
 		String ftp_host = "";
@@ -695,7 +701,7 @@ public final class ftp
 		// [o] field:0:required runAsUser
 		// [o] field:0:required procservice
 		// [o] field:0:required invoketype
-		IDataHashCursor idc = pipeline.getHashCursor();
+		IDataCursor idc = pipeline.getCursor();
 		
 			// Get input values
 		   	idc.first( "ftpalias" );
@@ -721,7 +727,7 @@ public final class ftp
 		
 			Values ftp_config = null;
 			Values recValue = null;
-			Enumeration enum1 = null;
+			Enumeration<String> enum1 = null;
 		
 			String aliasName = "";
 		
