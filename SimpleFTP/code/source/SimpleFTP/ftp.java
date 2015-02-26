@@ -1,8 +1,8 @@
 package SimpleFTP;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2005-02-25 14:53:11 JST
-// -----( ON-HOST: xiandros-c640
+// -----( CREATED: 2015-02-25 19:57:04 EST
+// -----( ON-HOST: PC-WIN7-001
 
 import com.wm.data.*;
 import com.wm.util.Values;
@@ -354,7 +354,7 @@ public final class ftp
 	Values ftp_config = null;
 	Values recValue = null;
 	Values outValues = null;
-	Enumeration enum = null;
+	Enumeration enum1 = null;
 
 	XMLCoder coder = null;
 	FileInputStream istream = null;
@@ -373,10 +373,10 @@ public final class ftp
 		if (ftp_config != null)
 		{
 			// Find FTP server requested
-			enum = ftp_config.sortedKeys();
-			while (enum.hasMoreElements())
+			enum1 = ftp_config.sortedKeys();
+			while (enum1.hasMoreElements())
 			{
-				aliasName = (String)enum.nextElement(); // Get alias name
+				aliasName = (String)enum1.nextElement(); // Get alias name
 				// If alias is found we will ignore it for DELETE
 				if (!aliasName.equals(ftp_alias))
 				{
@@ -409,7 +409,7 @@ public final class ftp
 	ftp_config = null;
 	recValue = null;
 	outValues = null;
-	enum = null;
+	enum1 = null;
 	ostream = null;
 	p = null;
 
@@ -721,7 +721,7 @@ public final class ftp
 		
 			Values ftp_config = null;
 			Values recValue = null;
-			Enumeration enum = null;
+			Enumeration enum1 = null;
 		
 			String aliasName = "";
 		
@@ -737,10 +737,10 @@ public final class ftp
 				ftp_config = coder.decode(in_stream);
 				if (ftp_config != null)
 				{
-					enum = ftp_config.sortedKeys();
-					while (enum.hasMoreElements())
+					enum1 = ftp_config.sortedKeys();
+					while (enum1.hasMoreElements())
 					{
-						aliasName = (String)enum.nextElement(); // Get alias name
+						aliasName = (String)enum1.nextElement(); // Get alias name
 						
 						if (aliasName.equals(ftp_alias))
 						{
@@ -750,10 +750,10 @@ public final class ftp
 		
 					if (recValue != null) 
 					{
-						enum = recValue.sortedKeys();
-						while (enum.hasMoreElements())
+						enum1 = recValue.sortedKeys();
+						while (enum1.hasMoreElements())
 						{
-							String name = (String)enum.nextElement();
+							String name = (String)enum1.nextElement();
 		
 							if( name.compareTo("ftphost") == 0 )
 								ftphost = recValue.getString("ftphost");
@@ -848,7 +848,7 @@ public final class ftp
 			in_stream = null;
 			ftp_config = null;
 			recValue = null;
-			enum = null;
+			enum1 = null;
 		
 			idc.destroy();
 		// --- <<IS-END>> ---
@@ -863,6 +863,7 @@ public final class ftp
 	{
 		// --- <<IS-START(ftp_alias_list_get)>> ---
 		// @sigtype java 3.5
+		// [o] recref:0:required DataSourceAlias SimpleFTP.ftp.rec:FTPDataSource
 	IDataHashCursor idc = pipeline.getHashCursor();
 	String ftp_alias = "";
 	String ftphost = "";
@@ -886,7 +887,7 @@ public final class ftp
 
 	Values ftp_config = null;
 	Values recValue = null;
-	Enumeration enum = null;
+	Enumeration enum1 = null;
 	Enumeration enum_data = null;
 	// Output values
 	Values data_source = null;
@@ -911,19 +912,19 @@ public final class ftp
 			data_source = new Values();
 
 			// Get number of values in this colection
-			enum = ftp_config.sortedKeys();
+			enum1 = ftp_config.sortedKeys();
 			int size = 0;
-			while (enum.hasMoreElements())
+			while (enum1.hasMoreElements())
 			{
-				ftp_alias = (String)enum.nextElement(); // Get alias name				
+				ftp_alias = (String)enum1.nextElement(); // Get alias name				
 				size++;
 			}	
 			data_source_list = new Values[size];
 
-			enum = ftp_config.sortedKeys();
-			while (enum.hasMoreElements())
+			enum1 = ftp_config.sortedKeys();
+			while (enum1.hasMoreElements())
 			{
-				ftp_alias = (String)enum.nextElement(); // Get alias name				
+				ftp_alias = (String)enum1.nextElement(); // Get alias name				
 				recValue = ftp_config.getValues(ftp_alias);
 
 				if (recValue != null) 
@@ -1013,7 +1014,7 @@ public final class ftp
 	in_stream = null;
 	ftp_config = null;
 	recValue = null;
-	enum = null;
+	enum1 = null;
 	enum_data = null;
 	idc.destroy();
 		// --- <<IS-END>> ---
@@ -1032,7 +1033,6 @@ public final class ftp
 		// [i] field:0:required local_dir
 		// [i] field:0:required type {"INBOUND","OUTBOUND"}
 		// [o] field:0:required working_dir
-		
 		// pipeline
 		IDataCursor pipelineCursor = pipeline.getCursor();
 			String	local_dir = IDataUtil.getString( pipelineCursor, "local_dir" );
@@ -1051,6 +1051,7 @@ public final class ftp
 		IDataCursor pipelineCursor_1 = pipeline.getCursor();
 		IDataUtil.put( pipelineCursor_1, "working_dir", working );
 		pipelineCursor_1.destroy();
+			
 		// --- <<IS-END>> ---
 
                 
